@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Return Book - Library Management</title>
+    <link rel="stylesheet" href="return.css">
+</head>
+<body>
+    <div class="return-container">
+        <h1>📚 Return Book</h1>
+        <form id="returnBookForm">
+            <label for="returnBookName">Book Name</label>
+            <input type="text"id="returnBookName"readonly>
+            <label for="returnStudentName">Student Name</label>
+            <input type="text"id="returnStudentName"readonly>
+            <label for="returnStudentId">Student ID</label>
+            <input type="text"id="returnStudentId"readonly>
+            <label for="returnIssueDate">Issue Date</label>
+            <input type="date"id="returnIssueDate"readonly>
+            <label for="returnDate">Return Date</label>
+            <input type="date"id="returnDate">
+            <button type="submit"id="returnBookBtn">RETURN BOOK</button>
+            <p id="message"></p>
+        </form>
+        <button
+            class="back-btn"
+            onclick="window.location.href='dashboard.html'">
+            Back to Dashboard
+        </button>
+    </div>
+    <script src="return.js"></script>
+</body>
+</html>

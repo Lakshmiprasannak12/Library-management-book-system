@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Return Books - Library Management</title>
+    <link rel="stylesheet" href="returntable.css">
+</head>
+<body>
+    <div class="return-container">
+        <h1>📚 Return Books</h1>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Book Name</th>
+                        <th>Student Name</th>
+                        <th>Student ID</th>
+                        <th>Issue Date</th>
+                        <th>Return Date</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="returnTableBody">
+                </tbody>
+            </table>
+        </div>
+        <p id="message"></p>
+        <button
+            class="back-btn"
+            onclick="window.location.href='dashboard.html'">
+             Back to Dashboard
+        </button>
+    </div>
+    <script src="returntable.js"></script>
+
+</body>
+
+</html>

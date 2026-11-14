@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book List - Library Management</title>
+    <link rel="stylesheet" href="book list.css">
+</head>
+<body>
+    <div class="booklist-container">
+        <h1>📚 Book List</h1>
+        <div class="searchbox">
+            <input type="text"id="searchInput"placeholder="Search book by title">
+        </div>
+        <div class="table container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Book Title</th>
+                        <th>Author</th>
+                        <th>Category</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="bookTableBody">
+                </tbody>
+            </table>
+        </div>
+        <p id="noBooks">
+            No books available.
+        </p>
+        <button
+            class="backbtn"
+            onclick="window.location.href='dashboard.html'">
+             Back to Dashboard
+        </button>
+    </div>
+    <script src="book list.js"></script>
+
+</body>
+
+</html>
